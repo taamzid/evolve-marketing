@@ -1,0 +1,28 @@
+.__nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 240px;
+  background-color: #fdfbf7;
+}
+
+.__line {
+  background-color: #38553c;
+  height: 14px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .__nav-container {
+    padding: 23px 104px;
+  }
+
+  .__nav-container img {
+    max-width: 100%;
+    min-height: 32px;
+  }
+
+  .__line {
+    height: 10px;
+  }
+}

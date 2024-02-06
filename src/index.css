@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: "Cera Pro";
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro"),
+    url("../src/fonts/Fontspring-DEMO-cerapro-regular.otf") format("truetype");
+  font-weight: normal;
+}
