@@ -44,7 +44,7 @@ const Name = () => {
             <BodyBg />
             <div className="__form__body">
               <div style={{ marginTop: "20px" }}></div>
-              <ProgressBar variant="bar-color" now={100} />
+              <ProgressBar variant="bar-color" now={0} />
               <div className="__almost">
                 Final Step! <br />
                 Who Should We Personalise This Review For?
