@@ -28,7 +28,7 @@ const Balance = () => {
             <BodyBg />
             <div className="__form__body">
               <div style={{ marginTop: "20px" }}></div>
-              <ProgressBar now={55} />
+              <ProgressBar variant="bar-color" now={55} />
               <div className="__select">
                 So you want to grow your business... What is your monthly
                 marketing budget?{" "}
@@ -65,7 +65,7 @@ const Balance = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar now={55} />
+            <ProgressBar variant="bar-color" now={55} />
             <div className="__select">
               So you want to grow your business... What is your monthly
               marketing budget?{" "}

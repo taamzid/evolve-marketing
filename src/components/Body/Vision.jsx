@@ -28,7 +28,7 @@ const Vision = () => {
             <BodyBg />
             <div className="__form__body">
               <div style={{ marginTop: "20px" }}></div>
-              <ProgressBar now={20} />
+              <ProgressBar variant="bar-color" now={20} />
               <div className="__select">
                 Define your vision. What does success look like for your
                 business in the next year?{" "}
@@ -66,7 +66,7 @@ const Vision = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar now={20} />
+            <ProgressBar variant="bar-color" now={20} />
             <div className="__select">
               Define your vision. What does success look like for your business
               in the next year?{" "}

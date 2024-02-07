@@ -55,7 +55,7 @@ const Age = () => {
           <div className="__body">
             <div className="__form__body">
               <div style={{ marginTop: "20px" }}></div>
-              <ProgressBar now={45} />
+              <ProgressBar variant="bar-color" now={45} />
               <div className="__select">Please Enter Your Age</div>
               <div className="__why">
                 <div className="__why__we">
@@ -100,7 +100,7 @@ const Age = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar now={45} />
+            <ProgressBar variant="bar-color" now={45} />
             <div className="__select">Please Enter Your Age</div>
             <div className="__why">
               <div className="__why__we">

@@ -25,7 +25,7 @@ const State = () => {
             <BodyBg />
             <div className="__form__body">
               <div style={{ marginTop: "30px" }}></div>
-              <ProgressBar now={60} />
+              <ProgressBar variant="bar-color" now={60} />
               <div className="__select">Please Choose Your State</div>
               <div className="__select__options__state">
                 {["NSW", "VIC", "QLD", "ACT", "TAS", "SA", "WA", "NT"].map(
@@ -54,7 +54,7 @@ const State = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "30px" }}></div>
-            <ProgressBar now={60} />
+            <ProgressBar variant="bar-color" now={60} />
             <div className="__select">Please Choose Your State</div>
             <div className="__select__options__state">
               {["NSW", "VIC", "QLD", "ACT", "TAS", "SA", "WA", "NT"].map(

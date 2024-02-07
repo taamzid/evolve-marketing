@@ -89,7 +89,7 @@ const Email = () => {
             <BodyBg />
             <div className="__form__body">
               <div style={{ marginTop: "20px" }}></div>
-              <ProgressBar now={100} />
+              <ProgressBar variant="bar-color" now={100} />
               <div className="__almost">
                 Thanks {selectedLastName}!
                 <br />
@@ -133,7 +133,7 @@ const Email = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar now={100} />
+            <ProgressBar variant="bar-color" now={100} />
             <div className="__almost">
               Thanks {selectedLastName}!
               <br />

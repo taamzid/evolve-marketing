@@ -85,7 +85,7 @@ const Processing = () => {
             <BodyBg />
             <div className="__form__body">
               <div style={{ marginTop: "20px" }}></div>
-              <ProgressBar now={90} />
+              <ProgressBar variant="bar-color" now={90} />
               <div className="__select">Processing Your Eligibility</div>
               <div style={{ marginBottom: "40px" }}></div>
               <div
@@ -138,7 +138,7 @@ const Processing = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar now={90} />
+            <ProgressBar variant="bar-color" now={90} />
             <div className="__select">Processing Your Eligibility</div>
             <div style={{ marginBottom: "40px" }}></div>
             <div

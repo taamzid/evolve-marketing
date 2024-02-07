@@ -336,6 +336,10 @@ button.__next {
     --bs-progress-height: 12px !important;
   }
 
+  .bg-bar-color {
+    background-color: #7dd956 !important;
+  }
+
   body .__form__body {
     margin-top: 0px;
   }

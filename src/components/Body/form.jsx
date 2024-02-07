@@ -129,7 +129,7 @@ const Form = () => {
 
   return (
     <div className="__form__body">
-      <ProgressBar now={15} />
+      <ProgressBar variant="bar-color" now={15} />
       <div className="__select">
         Choose Your Super Fund for a Tailored Analysis{" "}
       </div>

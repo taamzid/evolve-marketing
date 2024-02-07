@@ -25,7 +25,7 @@ const Concern = () => {
             <BodyBg />
             <div className="__form__body">
               <div style={{ marginTop: "10px" }}></div>
-              <ProgressBar now={75} />
+              <ProgressBar variant="bar-color" now={75} />
               <div className="__select__concern">
                 What Worries You Most About Your Superannuation?
               </div>
@@ -59,7 +59,7 @@ const Concern = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "10px" }}></div>
-            <ProgressBar now={75} />
+            <ProgressBar variant="bar-color" now={75} />
             <div className="__select__concern">
               What Worries You Most About Your Superannuation?
             </div>

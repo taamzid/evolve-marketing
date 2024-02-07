@@ -43,7 +43,7 @@ const Ideal = () => {
             <BodyBg />
             <div className="__form__body">
               <div style={{ marginTop: "20px" }}></div>
-              <ProgressBar now={100} />
+              <ProgressBar variant="bar-color" now={100} />
               <div className="__almost">
                 Final Step! <br />
                 Who Should We Personalise This Review For?
@@ -83,7 +83,7 @@ const Ideal = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar now={20} />
+            <ProgressBar variant="bar-color" now={20} />
             <div className="__almost">
               <div>
                 Describe your ideal customer. Who are they, and what do they

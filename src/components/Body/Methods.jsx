@@ -28,7 +28,7 @@ const Method = () => {
             <BodyBg />
             <div className="__form__body">
               <div style={{ marginTop: "20px" }}></div>
-              <ProgressBar now={45} />
+              <ProgressBar variant="bar-color" now={45} />
               <div className="__select">
                 What methods are you currently using to get your leads and
                 clients?
@@ -70,7 +70,7 @@ const Method = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar now={45} />
+            <ProgressBar variant="bar-color" now={45} />
             <div className="__select">
               What methods are you currently using to get your leads and
               clients?
