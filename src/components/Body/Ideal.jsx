@@ -5,8 +5,7 @@ import arrowImage from "../../assets/arrowIcon.svg";
 import DataContext from "../Context/dataContext";
 import BodyBg from "./bodyBg";
 import "./form.css";
-
-const Name = () => {
+const Ideal = () => {
   const isSmallScreen = window.innerWidth <= 767;
   const navigate = useNavigate();
   const { setSelectedName, setSelectedLastName } = useContext(DataContext);
@@ -31,7 +30,7 @@ const Name = () => {
       } else {
         setIsBlank(false);
         setIsValid(false);
-        navigate("/vision");
+        navigate("/method");
       }
     }, 500);
   };
@@ -54,7 +53,7 @@ const Name = () => {
               <input
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                placeholder="First Name"
+                placeholder="Write Here"
                 className="__input"
               />
             </div>
@@ -84,23 +83,20 @@ const Name = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={0} />
+            <ProgressBar animated now={20} />
             <div className="__almost">
               <div>
-                Embark on a journey of transformation in your business with us.
-                Firstly...
+                Describe your ideal customer. Who are they, and what do they
+                seek?
               </div>
-              <div>
-                let's start with your name! We look forward to navigating the
-                path to success
-              </div>
-              <div>together.</div>
+
+              <div>Describe below.</div>
             </div>
             <div className="__age__input">
               <input
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                placeholder="First Name"
+                placeholder="Write Here"
                 className="__input"
               />
             </div>
@@ -131,4 +127,4 @@ const Name = () => {
   );
 };
 
-export default Name;
+export default Ideal;

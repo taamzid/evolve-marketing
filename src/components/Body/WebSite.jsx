@@ -6,11 +6,11 @@ import DataContext from "../Context/dataContext";
 import BodyBg from "./bodyBg";
 import "./form.css";
 
-const Name = () => {
+const WebSite = () => {
   const isSmallScreen = window.innerWidth <= 767;
   const navigate = useNavigate();
   const { setSelectedName, setSelectedLastName } = useContext(DataContext);
-  const [lastName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [firstName, setFirstName] = useState("");
   const [isBlank, setIsBlank] = useState(false);
   const [isValid, setIsValid] = useState(false);
@@ -31,7 +31,7 @@ const Name = () => {
       } else {
         setIsBlank(false);
         setIsValid(false);
-        navigate("/vision");
+        navigate("/last");
       }
     }, 500);
   };
@@ -45,27 +45,30 @@ const Name = () => {
           </div>
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={100} />
+            <ProgressBar animated now={70} />
             <div className="__almost">
-              Final Step! <br />
-              Who Should We Personalise This Review For?
+              <div>
+                Okay... So that we can best prepare for our call, what is your
+                business name.
+              </div>
+              <div>and website address?</div>
             </div>
             <div className="__age__input">
               <input
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                placeholder="First Name"
+                placeholder="Bobs Building Company"
                 className="__input"
               />
             </div>
-            {/* <div className="__age__input">
+            <div className="__age__input">
               <input
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
-                placeholder="Last Name"
+                placeholder="Website URL"
                 className="__input"
               />
-            </div> */}
+            </div>
             {isValid && (
               <div className="__error__message">Please input valid name.</div>
             )}
@@ -84,34 +87,30 @@ const Name = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={0} />
+            <ProgressBar animated now={70} />
             <div className="__almost">
               <div>
-                Embark on a journey of transformation in your business with us.
-                Firstly...
+                Okay... So that we can best prepare for our call, what is your
+                business name.
               </div>
-              <div>
-                let's start with your name! We look forward to navigating the
-                path to success
-              </div>
-              <div>together.</div>
+              <div>and website address?</div>
             </div>
             <div className="__age__input">
               <input
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                placeholder="First Name"
+                placeholder="Bobs Building Company"
                 className="__input"
               />
             </div>
-            {/* <div className="__age__input">
+            <div className="__age__input">
               <input
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
-                placeholder="Last Name"
+                placeholder="Website URL"
                 className="__input"
               />
-            </div> */}
+            </div>
             {isValid && (
               <div className="__error__message">Please input valid name.</div>
             )}
@@ -131,4 +130,4 @@ const Name = () => {
   );
 };
 
-export default Name;
+export default WebSite;

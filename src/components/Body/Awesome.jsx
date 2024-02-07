@@ -6,12 +6,13 @@ import DataContext from "../Context/dataContext";
 import BodyBg from "./bodyBg";
 import "./form.css";
 
-const Name = () => {
+const Awesome = () => {
   const isSmallScreen = window.innerWidth <= 767;
   const navigate = useNavigate();
   const { setSelectedName, setSelectedLastName } = useContext(DataContext);
-  const [lastName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [firstName, setFirstName] = useState("");
+  //   const [phone, setPhone] = useState("");
   const [isBlank, setIsBlank] = useState(false);
   const [isValid, setIsValid] = useState(false);
   const isAlpha = (str) => /^[a-zA-Z]+$/.test(str);
@@ -19,6 +20,7 @@ const Name = () => {
   const handleDropdownOptionClick = () => {
     setSelectedName(lastName);
     setSelectedLastName(firstName);
+    // setSelectedPhone(phone);
     setTimeout(() => {
       if (firstName.trim() === "") {
         setIsBlank(true);
@@ -47,25 +49,28 @@ const Name = () => {
             <div style={{ marginTop: "20px" }}></div>
             <ProgressBar animated now={100} />
             <div className="__almost">
-              Final Step! <br />
-              Who Should We Personalise This Review For?
+              <div>Awesome!</div>
+              <div>
+                Let's get you booked in for your Free 30 Minute Business Growth
+                Strategy Session!
+              </div>
             </div>
             <div className="__age__input">
               <input
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                placeholder="First Name"
+                placeholder="Bobs Building Company"
                 className="__input"
               />
             </div>
-            {/* <div className="__age__input">
+            <div className="__age__input">
               <input
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
-                placeholder="Last Name"
+                placeholder="Website URL"
                 className="__input"
               />
-            </div> */}
+            </div>
             {isValid && (
               <div className="__error__message">Please input valid name.</div>
             )}
@@ -84,34 +89,38 @@ const Name = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={0} />
+            <ProgressBar animated now={100} />
             <div className="__almost">
+              <div>Awesome!</div>
               <div>
-                Embark on a journey of transformation in your business with us.
-                Firstly...
+                Let's get you booked in for your Free 30 Minute Business Growth
+                Strategy Session!
               </div>
-              <div>
-                let's start with your name! We look forward to navigating the
-                path to success
-              </div>
-              <div>together.</div>
             </div>
             <div className="__age__input">
               <input
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                placeholder="First Name"
+                placeholder="Full Name"
                 className="__input"
               />
             </div>
-            {/* <div className="__age__input">
+            <div className="__age__input">
               <input
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
-                placeholder="Last Name"
+                placeholder="Email"
                 className="__input"
               />
-            </div> */}
+            </div>
+            <div className="__age__input">
+              <input
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+                placeholder="Phone"
+                className="__input"
+              />
+            </div>
             {isValid && (
               <div className="__error__message">Please input valid name.</div>
             )}
@@ -131,4 +140,4 @@ const Name = () => {
   );
 };
 
-export default Name;
+export default Awesome;

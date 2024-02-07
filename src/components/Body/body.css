@@ -1,5 +1,5 @@
 .__body {
-  background-image: url("../../assets/bodyImage.svg");
+  background-image: url("../../assets/bg.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,7 +73,7 @@
 
 @media only screen and (max-width: 767px) {
   .__body {
-    background-image: url("../../assets/bgMobile.svg");
+    background-image: url("../../assets/bgmobi.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

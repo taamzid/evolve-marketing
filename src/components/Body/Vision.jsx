@@ -6,7 +6,7 @@ import DataContext from "../Context/dataContext";
 import BodyBg from "./bodyBg";
 import "./form.css";
 
-const Balance = () => {
+const Vision = () => {
   const isSmallScreen = window.innerWidth <= 767;
   const navigate = useNavigate();
   const { setSelectedBalance } = useContext(DataContext);
@@ -16,7 +16,7 @@ const Balance = () => {
     setSelectedOption(index);
     setSelectedBalance(balance);
     setTimeout(() => {
-      navigate("/website");
+      navigate("/ideal");
     }, 500);
   };
 
@@ -29,19 +29,20 @@ const Balance = () => {
           </div>
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={55} />
+            <ProgressBar animated now={20} />
             <div className="__select">
-              So you want to grow your business... What is your monthly
-              marketing budget?{" "}
+              Define your vision. What does success look like for your business
+              in the next year?{" "}
             </div>
             <div className="__select__options">
               {[
-                "$1000 - $2,000",
-                "$2000 - $5000",
-                "$5000 - $10000",
-                "$10000- $20000",
-                "$20000 - $40000",
-                "$40000+",
+                "More Qualified Leads",
+                "More Qualified Appointments",
+                "Better Systems and Sales Pipeline Management",
+                "Leverage Our Artificial Intelligence Sales Reps",
+                "Increased Brand Awareness",
+
+                "Higher Conversion Rates",
               ].map((option, index) => (
                 <div
                   key={index}
@@ -65,19 +66,20 @@ const Balance = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={55} />
+            <ProgressBar animated now={20} />
             <div className="__select">
-              So you want to grow your business... What is your monthly
-              marketing budget?{" "}
+              Define your vision. What does success look like for your business
+              in the next year?{" "}
             </div>
             <div className="__select__options">
               {[
-                "$1000 - $2,000",
-                "$2000 - $5000",
-                "$5000 - $10000",
-                "$10000- $20000",
-                "$20000 - $40000",
-                "$40000+",
+                "More Qualified Leads",
+                "More Qualified Appointments",
+                "Better Systems and Sales Pipeline Management",
+                "Leverage Our Artificial Intelligence Sales Reps",
+                "Increased Brand Awareness",
+
+                "Higher Conversion Rates",
               ].map((option, index) => (
                 <div
                   key={index}
@@ -101,4 +103,4 @@ const Balance = () => {
   );
 };
 
-export default Balance;
+export default Vision;

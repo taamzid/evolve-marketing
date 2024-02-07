@@ -14,6 +14,7 @@ const DataContextProvider = ({ children }) => {
     setSelectedName,
     selectedLastName,
     setSelectedLastName,
+    // setSelectedPhone,
   };
 
   return (

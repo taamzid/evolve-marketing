@@ -6,7 +6,7 @@ import DataContext from "../Context/dataContext";
 import BodyBg from "./bodyBg";
 import "./form.css";
 
-const Balance = () => {
+const Method = () => {
   const isSmallScreen = window.innerWidth <= 767;
   const navigate = useNavigate();
   const { setSelectedBalance } = useContext(DataContext);
@@ -16,7 +16,7 @@ const Balance = () => {
     setSelectedOption(index);
     setSelectedBalance(balance);
     setTimeout(() => {
-      navigate("/website");
+      navigate("/balance");
     }, 500);
   };
 
@@ -29,19 +29,24 @@ const Balance = () => {
           </div>
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={55} />
+            <ProgressBar animated now={45} />
             <div className="__select">
-              So you want to grow your business... What is your monthly
-              marketing budget?{" "}
+              What methods are you currently using to get your leads and
+              clients?
             </div>
             <div className="__select__options">
               {[
-                "$1000 - $2,000",
-                "$2000 - $5000",
-                "$5000 - $10000",
-                "$10000- $20000",
-                "$20000 - $40000",
-                "$40000+",
+                "Paid Meta Ads (Facebook & Instagram)",
+                "Paid Google Ads (including YouTube Ads)",
+                "Paid TikTok Ads",
+                "Organic Marketing (FB, Insta, TikTok, YouTube)",
+                "SEO",
+
+                "Television Ads",
+                "Radio Ads",
+                "Referrals",
+                "Cold Calling",
+                "LinkedIn Ads",
               ].map((option, index) => (
                 <div
                   key={index}
@@ -65,19 +70,24 @@ const Balance = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={55} />
+            <ProgressBar animated now={45} />
             <div className="__select">
-              So you want to grow your business... What is your monthly
-              marketing budget?{" "}
+              What methods are you currently using to get your leads and
+              clients?
             </div>
             <div className="__select__options">
               {[
-                "$1000 - $2,000",
-                "$2000 - $5000",
-                "$5000 - $10000",
-                "$10000- $20000",
-                "$20000 - $40000",
-                "$40000+",
+                "Paid Meta Ads (Facebook & Instagram)",
+                "Paid Google Ads (including YouTube Ads)",
+                "Paid TikTok Ads",
+                "Organic Marketing (FB, Insta, TikTok, YouTube)",
+                "SEO",
+
+                "Television Ads",
+                "Radio Ads",
+                "Referrals",
+                "Cold Calling",
+                "LinkedIn Ads",
               ].map((option, index) => (
                 <div
                   key={index}
@@ -101,4 +111,4 @@ const Balance = () => {
   );
 };
 
-export default Balance;
+export default Method;

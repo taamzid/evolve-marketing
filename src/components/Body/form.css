@@ -4,14 +4,14 @@ body .__form__body {
 
 .__form__body {
   padding: 60px 50px;
-  background-color: #fdfbf7;
+  background-color: #ffffff;
   max-width: 1196px;
   margin: 0 auto;
   position: relative;
 }
 
 .__form__body__failed {
-  background-color: #fdfbf7;
+  background-color: #ffffff;
   margin: 0 auto;
   padding: 80px 0 80px 0;
 }
@@ -145,7 +145,7 @@ body .__form__body {
 
 .__options__balance {
   font-family: "Inter", sans-serif;
-  background-color: #23322c;
+  background-color: #113f64;
   padding: 20px 56px;
   font-size: 20px;
   font-weight: 500;
@@ -187,18 +187,19 @@ body .__form__body {
 
 .__input {
   padding: 20px 56px;
-  background-color: #d5dad2;
-  color: #23322c;
+  background-color: white;
+  color: #9b9b9b;
   font-size: 19px;
   font-weight: 500;
-  border: 1px solid #23322c;
+  border: 1px solid #b9b9b9;
   font-family: "Inter", sans-serif;
+  border-radius: 16px;
 }
 
 .__next {
   font-size: 20px;
   font-weight: 400;
-  background-color: #38553c;
+  background-color: #113f64;
   color: #fff;
   width: 241px;
   min-height: 64px;
@@ -208,6 +209,7 @@ body .__form__body {
   margin: 0 auto;
   cursor: pointer;
   border: none;
+  border-radius: 30px;
 }
 
 button.__next {
@@ -306,7 +308,7 @@ button.__next {
 }
 
 .progress {
-  --bs-progress-bar-bg: #507b1c !important;
+  --bs-progress-bar-bg: #40a2d8 !important;
   --bs-progress-bg: rgba(56, 85, 60, 0.2) !important;
   --bs-progress-height: 20px !important;
   border-radius: 100px !important;

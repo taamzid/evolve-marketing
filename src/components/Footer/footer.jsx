@@ -1,5 +1,5 @@
-import "./footer.css";
 import logoImage from "../../assets/VASTION-PW-WHITE 1.svg";
+import "./footer.css";
 // import footerlogoImage from "../../assets/footerNewLogo.svg";
 
 const Footer = () => {

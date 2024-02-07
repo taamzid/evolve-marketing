@@ -6,7 +6,7 @@ import DataContext from "../Context/dataContext";
 import BodyBg from "./bodyBg";
 import "./form.css";
 
-const Name = () => {
+const Last = () => {
   const isSmallScreen = window.innerWidth <= 767;
   const navigate = useNavigate();
   const { setSelectedName, setSelectedLastName } = useContext(DataContext);
@@ -31,7 +31,7 @@ const Name = () => {
       } else {
         setIsBlank(false);
         setIsValid(false);
-        navigate("/vision");
+        navigate("/awesome");
       }
     }, 500);
   };
@@ -45,16 +45,20 @@ const Name = () => {
           </div>
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={100} />
+            <ProgressBar animated now={85} />
             <div className="__almost">
-              Final Step! <br />
-              Who Should We Personalise This Review For?
+              <h1>One Last Question...</h1>
+              <p>
+                At Evolve Marketing Strategists, we're very selective about who
+                we choose to work with. What is the Number #1 reason we should
+                help grow your business over any of your competitors?
+              </p>
             </div>
             <div className="__age__input">
               <input
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                placeholder="First Name"
+                placeholder=""
                 className="__input"
               />
             </div>
@@ -84,23 +88,20 @@ const Name = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={0} />
+            <ProgressBar animated now={85} />
             <div className="__almost">
-              <div>
-                Embark on a journey of transformation in your business with us.
-                Firstly...
-              </div>
-              <div>
-                let's start with your name! We look forward to navigating the
-                path to success
-              </div>
-              <div>together.</div>
+              <h1>One Last Question...</h1>
+              <p>
+                At Evolve Marketing Strategists, we're very selective about who
+                we choose to work with. What is the Number #1 reason we should
+                help grow your business over any of your competitors?
+              </p>
             </div>
             <div className="__age__input">
               <input
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                placeholder="First Name"
+                placeholder=""
                 className="__input"
               />
             </div>
@@ -131,4 +132,4 @@ const Name = () => {
   );
 };
 
-export default Name;
+export default Last;

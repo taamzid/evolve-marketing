@@ -1,5 +1,5 @@
+import vastionLogo from "../../assets/logoMain.svg";
 import "./navBar.css";
-import vastionLogo from "../../assets/VASTION-PW-GREEN 1.svg";
 // import vastionLogoMobile from "../../assets/navNewLogo.svg";
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,7 @@ const NavBar = () => {
           <img src={vastionLogo} alt="vastionLogo" />
         </Link>
       </div>
-      <div className="__line"></div>
+      {/* <div className="__line"></div> */}
     </>
   );
 };
