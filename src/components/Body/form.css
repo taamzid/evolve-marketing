@@ -260,6 +260,10 @@ button.__next {
   font-weight: 400;
 }
 
+.bg-bar-color {
+  background-color: #7dd956 !important;
+}
+
 .__barIcon {
   display: flex;
   align-items: center;
