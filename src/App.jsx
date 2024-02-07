@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Awesome from "./components/Body/Awesome";
+import Ideal from "./components/Body/Ideal";
 import Last from "./components/Body/Last";
 import Method from "./components/Body/Methods";
 import Vision from "./components/Body/Vision";
@@ -8,7 +9,6 @@ import Age from "./components/Body/age";
 import Balance from "./components/Body/balance";
 import Concern from "./components/Body/concern";
 import Email from "./components/Body/email";
-import Ideal from "./components/Body/ideal";
 import Name from "./components/Body/name";
 import ProcessDone from "./components/Body/processDone";
 import ProcessFailed from "./components/Body/processFailed";
