@@ -26,38 +26,38 @@ const Balance = () => {
         <>
           <div className="__body">
             <BodyBg />
-          </div>
-          <div className="__form__body">
-            <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={55} />
-            <div className="__select">
-              So you want to grow your business... What is your monthly
-              marketing budget?{" "}
+            <div className="__form__body">
+              <div style={{ marginTop: "20px" }}></div>
+              <ProgressBar now={55} />
+              <div className="__select">
+                So you want to grow your business... What is your monthly
+                marketing budget?{" "}
+              </div>
+              <div className="__select__options">
+                {[
+                  "$1000 - $2,000",
+                  "$2000 - $5000",
+                  "$5000 - $10000",
+                  "$10000- $20000",
+                  "$20000 - $40000",
+                  "$40000+",
+                ].map((option, index) => (
+                  <div
+                    key={index}
+                    className={`__options__balance ${
+                      selectedOption === index ? "selected" : ""
+                    }`}
+                    onClick={() => handleOptionClick(index, option)}
+                  >
+                    {option}
+                    {selectedOption === index && (
+                      <img src={tickIcon} alt="tickIcon" />
+                    )}
+                  </div>
+                ))}
+              </div>
+              {/* <img src={arrowImage} alt="arrowImage" className="__arrowIcon" /> */}
             </div>
-            <div className="__select__options">
-              {[
-                "$1000 - $2,000",
-                "$2000 - $5000",
-                "$5000 - $10000",
-                "$10000- $20000",
-                "$20000 - $40000",
-                "$40000+",
-              ].map((option, index) => (
-                <div
-                  key={index}
-                  className={`__options__balance ${
-                    selectedOption === index ? "selected" : ""
-                  }`}
-                  onClick={() => handleOptionClick(index, option)}
-                >
-                  {option}
-                  {selectedOption === index && (
-                    <img src={tickIcon} alt="tickIcon" />
-                  )}
-                </div>
-              ))}
-            </div>
-            {/* <img src={arrowImage} alt="arrowImage" className="__arrowIcon" /> */}
           </div>
         </>
       ) : (
@@ -65,7 +65,7 @@ const Balance = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={55} />
+            <ProgressBar now={55} />
             <div className="__select">
               So you want to grow your business... What is your monthly
               marketing budget?{" "}

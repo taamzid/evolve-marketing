@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import { useNavigate } from "react-router-dom";
-import arrowImage from "../../assets/arrowIcon.svg";
+// import arrowImage from "../../assets/arrowIcon.svg";
 import DataContext from "../Context/dataContext";
 import BodyBg from "./bodyBg";
 import "./form.css";
@@ -42,44 +42,44 @@ const WebSite = () => {
         <>
           <div className="__body">
             <BodyBg />
-          </div>
-          <div className="__form__body">
-            <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={70} />
-            <div className="__almost">
-              <div>
-                Okay... So that we can best prepare for our call, what is your
-                business name.
+            <div className="__form__body">
+              <div style={{ marginTop: "20px" }}></div>
+              <ProgressBar now={70} />
+              <div className="__almost">
+                <div>
+                  Okay... So that we can best prepare for our call, what is your
+                  business name.
+                </div>
+                <div>and website address?</div>
               </div>
-              <div>and website address?</div>
+              <div className="__age__input">
+                <input
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  placeholder="Bobs Building Company"
+                  className="__input"
+                />
+              </div>
+              <div className="__age__input">
+                <input
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                  placeholder="Website URL"
+                  className="__input"
+                />
+              </div>
+              {isValid && (
+                <div className="__error__message">Please input valid name.</div>
+              )}
+              {isBlank && (
+                <div className="__error__message">Name can not be empty.</div>
+              )}
+              <br />
+              <div className="__next" onClick={handleDropdownOptionClick}>
+                Next
+              </div>
+              {/* <img src={arrowImage} alt="arrowImage" className="__arrowIcon" /> */}
             </div>
-            <div className="__age__input">
-              <input
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-                placeholder="Bobs Building Company"
-                className="__input"
-              />
-            </div>
-            <div className="__age__input">
-              <input
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-                placeholder="Website URL"
-                className="__input"
-              />
-            </div>
-            {isValid && (
-              <div className="__error__message">Please input valid name.</div>
-            )}
-            {isBlank && (
-              <div className="__error__message">Name can not be empty.</div>
-            )}
-            <br />
-            <div className="__next" onClick={handleDropdownOptionClick}>
-              Next
-            </div>
-            <img src={arrowImage} alt="arrowImage" className="__arrowIcon" />
           </div>
         </>
       ) : (
@@ -87,7 +87,7 @@ const WebSite = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={70} />
+            <ProgressBar now={70} />
             <div className="__almost">
               <div>
                 Okay... So that we can best prepare for our call, what is your

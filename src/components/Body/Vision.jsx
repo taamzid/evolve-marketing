@@ -26,39 +26,39 @@ const Vision = () => {
         <>
           <div className="__body">
             <BodyBg />
-          </div>
-          <div className="__form__body">
-            <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={20} />
-            <div className="__select">
-              Define your vision. What does success look like for your business
-              in the next year?{" "}
-            </div>
-            <div className="__select__options">
-              {[
-                "More Qualified Leads",
-                "More Qualified Appointments",
-                "Better Systems and Sales Pipeline Management",
-                "Leverage Our Artificial Intelligence Sales Reps",
-                "Increased Brand Awareness",
+            <div className="__form__body">
+              <div style={{ marginTop: "20px" }}></div>
+              <ProgressBar now={20} />
+              <div className="__select">
+                Define your vision. What does success look like for your
+                business in the next year?{" "}
+              </div>
+              <div className="__select__options">
+                {[
+                  "More Qualified Leads",
+                  "More Qualified Appointments",
+                  "Better Systems and Sales Pipeline Management",
+                  "Leverage Our Artificial Intelligence Sales Reps",
+                  "Increased Brand Awareness",
 
-                "Higher Conversion Rates",
-              ].map((option, index) => (
-                <div
-                  key={index}
-                  className={`__options__balance ${
-                    selectedOption === index ? "selected" : ""
-                  }`}
-                  onClick={() => handleOptionClick(index, option)}
-                >
-                  {option}
-                  {selectedOption === index && (
-                    <img src={tickIcon} alt="tickIcon" />
-                  )}
-                </div>
-              ))}
+                  "Higher Conversion Rates",
+                ].map((option, index) => (
+                  <div
+                    key={index}
+                    className={`__options__balance ${
+                      selectedOption === index ? "selected" : ""
+                    }`}
+                    onClick={() => handleOptionClick(index, option)}
+                  >
+                    {option}
+                    {selectedOption === index && (
+                      <img src={tickIcon} alt="tickIcon" />
+                    )}
+                  </div>
+                ))}
+              </div>
+              {/* <img src={arrowImage} alt="arrowImage" className="__arrowIcon" /> */}
             </div>
-            {/* <img src={arrowImage} alt="arrowImage" className="__arrowIcon" /> */}
           </div>
         </>
       ) : (
@@ -66,7 +66,7 @@ const Vision = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={20} />
+            <ProgressBar now={20} />
             <div className="__select">
               Define your vision. What does success look like for your business
               in the next year?{" "}

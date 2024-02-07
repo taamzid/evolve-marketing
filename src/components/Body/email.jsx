@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./form.css";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import arrowImage from "../../assets/arrowIcon.svg";
+// import arrowImage from "../../assets/arrowIcon.svg";
 import { useContext, useState } from "react";
 import BodyBg from "./bodyBg";
 import DataContext from "../Context/dataContext";
@@ -87,43 +87,45 @@ const Email = () => {
         <>
           <div className="__body">
             <BodyBg />
-          </div>
-          <div className="__form__body">
-            <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={100} />
-            <div className="__almost">
-              Thanks {selectedLastName}!
-              <br />
-              Let's Arrange the Best Way to Deliver Your Personalised Review.
-            </div>
+            <div className="__form__body">
+              <div style={{ marginTop: "20px" }}></div>
+              <ProgressBar now={100} />
+              <div className="__almost">
+                Thanks {selectedLastName}!
+                <br />
+                Let's Arrange the Best Way to Deliver Your Personalised Review.
+              </div>
 
-            <div className="__age__input">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter Your Best Email..."
-                className="__input"
-              />
+              <div className="__age__input">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter Your Best Email..."
+                  className="__input"
+                />
+              </div>
+              {emailError && (
+                <div className="__error__message">{emailError}</div>
+              )}
+              <div className="__age__input">
+                <input
+                  type="tel"
+                  value={contact}
+                  onChange={(e) => setContact(e.target.value)}
+                  placeholder={`(${countryCode}) Enter Your Mobile`}
+                  className="__input"
+                />
+              </div>
+              {contactError && (
+                <div className="__error__message">{contactError}</div>
+              )}
+              <br />
+              <button className="__next" type="submit">
+                Next
+              </button>
+              {/* <img src={arrowImage} alt="arrowImage" className="__arrowIcon" /> */}
             </div>
-            {emailError && <div className="__error__message">{emailError}</div>}
-            <div className="__age__input">
-              <input
-                type="tel"
-                value={contact}
-                onChange={(e) => setContact(e.target.value)}
-                placeholder={`(${countryCode}) Enter Your Mobile`}
-                className="__input"
-              />
-            </div>
-            {contactError && (
-              <div className="__error__message">{contactError}</div>
-            )}
-            <br />
-            <button className="__next" type="submit">
-              Next
-            </button>
-            <img src={arrowImage} alt="arrowImage" className="__arrowIcon" />
           </div>
         </>
       ) : (
@@ -131,7 +133,7 @@ const Email = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={100} />
+            <ProgressBar now={100} />
             <div className="__almost">
               Thanks {selectedLastName}!
               <br />
@@ -165,7 +167,7 @@ const Email = () => {
             <button className="__next" type="submit">
               Next
             </button>
-            <img src={arrowImage} alt="arrowImage" className="__arrowIcon" />
+            {/* <img src={arrowImage} alt="arrowImage" className="__arrowIcon" /> */}
           </div>
         </div>
       )}

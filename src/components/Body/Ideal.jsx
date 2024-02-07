@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import { useNavigate } from "react-router-dom";
-import arrowImage from "../../assets/arrowIcon.svg";
+// import arrowImage from "../../assets/arrowIcon.svg";
 import DataContext from "../Context/dataContext";
 import BodyBg from "./bodyBg";
 import "./form.css";
@@ -41,23 +41,22 @@ const Ideal = () => {
         <>
           <div className="__body">
             <BodyBg />
-          </div>
-          <div className="__form__body">
-            <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={100} />
-            <div className="__almost">
-              Final Step! <br />
-              Who Should We Personalise This Review For?
-            </div>
-            <div className="__age__input">
-              <input
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-                placeholder="Write Here"
-                className="__input"
-              />
-            </div>
-            {/* <div className="__age__input">
+            <div className="__form__body">
+              <div style={{ marginTop: "20px" }}></div>
+              <ProgressBar now={100} />
+              <div className="__almost">
+                Final Step! <br />
+                Who Should We Personalise This Review For?
+              </div>
+              <div className="__age__input">
+                <input
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  placeholder="Write Here"
+                  className="__input"
+                />
+              </div>
+              {/* <div className="__age__input">
               <input
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
@@ -65,17 +64,18 @@ const Ideal = () => {
                 className="__input"
               />
             </div> */}
-            {isValid && (
-              <div className="__error__message">Please input valid name.</div>
-            )}
-            {isBlank && (
-              <div className="__error__message">Name can not be empty.</div>
-            )}
-            <br />
-            <div className="__next" onClick={handleDropdownOptionClick}>
-              Next
+              {isValid && (
+                <div className="__error__message">Please input valid name.</div>
+              )}
+              {isBlank && (
+                <div className="__error__message">Name can not be empty.</div>
+              )}
+              <br />
+              <div className="__next" onClick={handleDropdownOptionClick}>
+                Next
+              </div>
+              {/* <img src={arrowImage} alt="arrowImage" className="__arrowIcon" /> */}
             </div>
-            <img src={arrowImage} alt="arrowImage" className="__arrowIcon" />
           </div>
         </>
       ) : (
@@ -83,7 +83,7 @@ const Ideal = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={20} />
+            <ProgressBar now={20} />
             <div className="__almost">
               <div>
                 Describe your ideal customer. Who are they, and what do they

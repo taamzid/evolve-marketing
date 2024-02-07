@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import "./form.css";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import RamonakProgressBar from "@ramonak/react-progress-bar";
-import arrowImage from "../../assets/arrowIcon.svg";
+// import arrowImage from "../../assets/arrowIcon.svg";
 import BodyBg from "./bodyBg";
 import checkIcon from "../../assets/check-lg.svg";
 import refreshIcon from "../../assets/refresh.svg";
@@ -83,54 +83,54 @@ const Processing = () => {
         <>
           <div className="__body">
             <BodyBg />
-          </div>
-          <div className="__form__body">
-            <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={90} />
-            <div className="__select">Processing Your Eligibility</div>
-            <div style={{ marginBottom: "40px" }}></div>
-            <div
-              style={{
-                display: "grid",
-                alignItems: "center",
-                justifyItems: "center",
-                gap: "25px",
-              }}
-            >
-              {progressBars.map((bar, index) => (
-                <div key={index} className="__processBar">
-                  <div>{bar.label}</div>
-                  <div className="__barIcon">
-                    <div>
-                      <RamonakProgressBar
-                        completed={bar.completed}
-                        transitionDuration="5s"
-                        isLabelVisible={false}
-                        animateOnRender={true}
-                        bgColor="#507B1C"
-                        baseBgColor="rgba(56, 85, 60, 0.20)"
-                        height="5px"
-                        width="290px"
-                      />
+            <div className="__form__body">
+              <div style={{ marginTop: "20px" }}></div>
+              <ProgressBar now={90} />
+              <div className="__select">Processing Your Eligibility</div>
+              <div style={{ marginBottom: "40px" }}></div>
+              <div
+                style={{
+                  display: "grid",
+                  alignItems: "center",
+                  justifyItems: "center",
+                  gap: "25px",
+                }}
+              >
+                {progressBars.map((bar, index) => (
+                  <div key={index} className="__processBar">
+                    <div>{bar.label}</div>
+                    <div className="__barIcon">
+                      <div>
+                        <RamonakProgressBar
+                          completed={bar.completed}
+                          transitionDuration="5s"
+                          isLabelVisible={false}
+                          animateOnRender={true}
+                          bgColor="#507B1C"
+                          baseBgColor="rgba(56, 85, 60, 0.20)"
+                          height="5px"
+                          width="290px"
+                        />
+                      </div>
+                      {!bar.showCheckIcon && (
+                        <img
+                          src={refreshIcon}
+                          alt="refreshIcon"
+                          className="rotate"
+                        />
+                      )}
+                      {bar.showCheckIcon && (
+                        <img src={checkIcon} alt="checkIcon" />
+                      )}
                     </div>
-                    {!bar.showCheckIcon && (
-                      <img
-                        src={refreshIcon}
-                        alt="refreshIcon"
-                        className="rotate"
-                      />
-                    )}
-                    {bar.showCheckIcon && (
-                      <img src={checkIcon} alt="checkIcon" />
-                    )}
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+              <div className="__next" style={{ marginTop: "50px" }}>
+                {allProcessesCompleted ? "Done" : "Processing..."}
+              </div>
+              {/* <img src={arrowImage} alt="arrowImage" className="__arrowIcon" /> */}
             </div>
-            <div className="__next" style={{ marginTop: "50px" }}>
-              {allProcessesCompleted ? "Done" : "Processing..."}
-            </div>
-            <img src={arrowImage} alt="arrowImage" className="__arrowIcon" />
           </div>
         </>
       ) : (
@@ -138,7 +138,7 @@ const Processing = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar animated now={90} />
+            <ProgressBar now={90} />
             <div className="__select">Processing Your Eligibility</div>
             <div style={{ marginBottom: "40px" }}></div>
             <div
@@ -182,7 +182,7 @@ const Processing = () => {
             <div className="__next" style={{ marginTop: "50px" }}>
               {allProcessesCompleted ? "Done" : "Processing..."}
             </div>
-            <img src={arrowImage} alt="arrowImage" className="__arrowIcon" />
+            {/* <img src={arrowImage} alt="arrowImage" className="__arrowIcon" /> */}
           </div>
         </div>
       )}

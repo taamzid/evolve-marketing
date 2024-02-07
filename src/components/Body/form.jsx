@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useEffect, useRef, useState } from "react";
 import "./form.css";
-import arrowImage from "../../assets/arrowIcon.svg";
+// import arrowImage from "../../assets/arrowIcon.svg";
 import tickIcon from "../../assets/tick-circleBody.svg";
 import dropDown from "../../assets/arrow-down.svg";
 import { useNavigate } from "react-router-dom";
@@ -129,7 +129,7 @@ const Form = () => {
 
   return (
     <div className="__form__body">
-      <ProgressBar animated now={15} />
+      <ProgressBar now={15} />
       <div className="__select">
         Choose Your Super Fund for a Tailored Analysis{" "}
       </div>
@@ -182,7 +182,7 @@ const Form = () => {
           ))}
         </div>
       )}
-      <img src={arrowImage} alt="arrowImage" className="__arrowIcon" />
+      {/* <img src={arrowImage} alt="arrowImage" className="__arrowIcon" /> */}
     </div>
   );
 };
