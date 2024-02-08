@@ -43,10 +43,14 @@ const Ideal = () => {
             <BodyBg />
             <div className="__form__body">
               <div style={{ marginTop: "20px" }}></div>
-              <ProgressBar variant="bar-color" now={100} />
+              <ProgressBar variant="bar-color" now={25} />
               <div className="__almost">
-                Final Step! <br />
-                Who Should We Personalise This Review For?
+                <div>
+                  Describe your ideal customer. Who are they, and what do they
+                  seek?
+                </div>
+
+                <div>Describe below.</div>
               </div>
               <div className="__age__input">
                 <input
@@ -83,7 +87,7 @@ const Ideal = () => {
           <BodyBg />
           <div className="__form__body">
             <div style={{ marginTop: "20px" }}></div>
-            <ProgressBar variant="bar-color" now={20} />
+            <ProgressBar variant="bar-color" now={25} />
             <div className="__almost">
               <div>
                 Describe your ideal customer. Who are they, and what do they

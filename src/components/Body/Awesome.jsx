@@ -33,7 +33,7 @@ const Awesome = () => {
       } else {
         setIsBlank(false);
         setIsValid(false);
-        navigate("/vision");
+        // navigate("/vision");
       }
     }, 500);
   };
@@ -78,7 +78,7 @@ const Awesome = () => {
               )}
               <br />
               <div className="__next" onClick={handleDropdownOptionClick}>
-                Next
+                Book A Call
               </div>
               {/* <img src={arrowImage} alt="arrowImage" className="__arrowIcon" /> */}
             </div>
@@ -130,7 +130,7 @@ const Awesome = () => {
             <br />
 
             <div className="__next" onClick={handleDropdownOptionClick}>
-              Next
+              Book A Call
             </div>
             {/* <img src={arrowImage} alt="arrowImage" className="__arrowIcon" /> */}
           </div>

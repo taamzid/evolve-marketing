@@ -261,7 +261,7 @@ button.__next {
 }
 
 .bg-bar-color {
-  background-color: #7dd956 !important;
+  background-color: #40a2d8 !important;
 }
 
 .__barIcon {
@@ -313,7 +313,7 @@ button.__next {
 
 .progress {
   --bs-progress-bar-bg: #40a2d8 !important;
-  --bs-progress-bg: rgba(56, 85, 60, 0.2) !important;
+  --bs-progress-bg: rgba(56, 85, 60, 0.2);
   --bs-progress-height: 20px !important;
   border-radius: 100px !important;
 }
@@ -337,11 +337,14 @@ button.__next {
 
 @media only screen and (max-width: 767px) {
   .progress {
+    --bs-progress-bar-bg: #40a2d8 !important;
+    --bs-progress-bg: rgba(56, 85, 60, 0.2) !important;
     --bs-progress-height: 12px !important;
+    border-radius: 100px !important;
   }
 
   .bg-bar-color {
-    background-color: #7dd956 !important;
+    background-color: #40a2d8 !important;
   }
 
   body .__form__body {
